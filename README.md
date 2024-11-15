@@ -8,7 +8,7 @@ Với MVP : Giao tiếp Model  <<==>> View qua Presenter bằng Interface (Do MV
 ⇒ xu hướng MVVM giải quyết được tình trạng đó với Observer Design patern (Live Data). Khi đó dữ liệu từ ViewModel có thể cập nhật lên n View cùng 1 lúc.
 Với MVVM : Giao tiếp Model  <=⇒ View qua ViewModel .
 Với cách code Boilerplate => Đơn giản , app đơn giản chưa cần build chuẩn MVVM hay MVP. Dễ gặp tình trạng dư thừa code, k ưu tiên dùng
-- Link project for boilerpalet : https://github.com/GrossumUA/TAS_Android_Boilerplate
+- Link project ví dụ cho boilerpalet : https://github.com/GrossumUA/TAS_Android_Boilerplate
 MVP và MVVM yêu dùng cho những app phức tạp, đa màn.
 
 	⇒ Ưu tiên dùng MVVM.
@@ -42,18 +42,17 @@ res/drawable: ic_user, bg_home_screen….
 Biến java/kotlin : userName, userEmail… => camelCase
 
 # Folder  project : 
-Tìm hiểu tổng quan các file có trong 1 project android
-	+ .gradle : Chứa các file liên quan đến Gradle dự án, là công cụ build cho dư án android. Gradle quản lí các thư viện dependencies được thêm vào dự án.
-	+ .idea :  Chứa các thiết lập của Inteleji IDEA (Bản chất android studio được xây dựng dựa trên Inteleji) => lưu thông tin cấu hình của project và môi trường .
-	+ app:  là thư mục chính chứa mã nguồn của dự án, chứa file java/kotlin,xml, tài nguyên ảnh/text/file cấu hình. => chứa mã nguồn logic dự án
-	+ Gradle: Chứa các file gradle Wrapper, dùng để hỗ trợ việc build dự án. Gradle Wrapper giúp đảm bảo mọi người cùng sử dụng một phiên bản Gradle khi phát triển ứng dụng
-	+ Build.gradle.kts : Là file cấu hình build chính của dự án. Chứa phiên bản gradle, repositories,  dependencies chung cho dự án
-	+ Gradlew và gradlew.bat : chứa các script để chạy Gradle wrapper.  Cho phép chạy Gradle mà k cần cài trên máy.
-	+ Local.properties: Chứa cấu hình cục bộ của dự án, (Vd: đường dẫn sdk của Android tren máy tính => tùy thuộc vào mỗi máy, k đồng nhất)
-	+ Settings.gradle.kts : chứa danh sách các module của dự án (dự án đơn giản thì chỉ có module app)
-	+ External Libraries: Chứa các thư viện và dependencies của dự án, các thư viện android, java or dependencies khác được định nghĩa trong build.gradle
-	+ Scratches and Consoles : Chứa các file nháp và giao diện console, dùng để test mã or ghi chú.
-Cấu trúc folder src : trong project
+Tìm hiểu tổng quan các file có trong 1 project android:
+	* .gradle : Chứa các file liên quan đến Gradle dự án, là công cụ build cho dư án android. Gradle quản lí các thư viện dependencies được thêm vào dự án.
+	* .idea :  Chứa các thiết lập của Inteleji IDEA (Bản chất android studio được xây dựng dựa trên Inteleji) => lưu thông tin cấu hình của project và môi trường .
+	* app:  là thư mục chính chứa mã nguồn của dự án, chứa file java/kotlin,xml, tài nguyên ảnh/text/file cấu hình. => chứa mã nguồn logic dự án
+	* Gradle: Chứa các file gradle Wrapper, dùng để hỗ trợ việc build dự án. Gradle Wrapper giúp đảm bảo mọi người cùng sử dụng một phiên bản Gradle khi phát triển ứng dụng
+	* Build.gradle.kts : Là file cấu hình build chính của dự án. Chứa phiên bản gradle, repositories,  dependencies chung cho dự án
+	* Gradlew và gradlew.bat : chứa các script để chạy Gradle wrapper.  Cho phép chạy Gradle mà k cần cài trên máy.
+	* Local.properties: Chứa cấu hình cục bộ của dự án, (Vd: đường dẫn sdk của Android tren máy tính => tùy thuộc vào mỗi máy, k đồng nhất)
+	* Settings.gradle.kts : chứa danh sách các module của dự án (dự án đơn giản thì chỉ có module app)
+	* External Libraries: Chứa các thư viện và dependencies của dự án, các thư viện android, java or dependencies khác được định nghĩa trong build.gradle
+	* Scratches and Consoles : Chứa các file nháp và giao diện console, dùng để test mã or ghi chú.
 ![image](https://github.com/user-attachments/assets/c41a9614-3b3d-4b79-827b-e7a20b0bd299)
 
 
